@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+header {
+    background-color: orangered;
+    color: #fff;
+    padding-top: 16px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+#linha-horizontal {
+    max-width: 100%;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    margin-top: 1px;
+}
+
+nav {
+    padding: 16px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sobre-a-loja {
+    margin-top: 16px;
+    display: flex;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+#paragrafos {
+    margin-top: 32px;
+}
+
+.penultimo-item {
+    margin-right: 60px;
+}
+
+#linha-horizontal-2 {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.lista-tenis {
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.lista-tenis li {
+    list-style: none;
+    max-width: 100%;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.lista-tenis li img {
+    width: 125%;
+}
+
+.lista-tenis li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 6%;
+}
+
+button {
+    display: block;
+    width: 125%;
+    padding: 8px 0;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    header > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 16px;
+    }
+
+    #sobre-a-loja {
+        display: flex;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .lista ul {
+        display: block;
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .lista li img {
+        max-width: 95%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .lista .item-central img {
+        max-width: 109%;
+        margin-bottom: 2%;
+        margin-left: -30px;
+    }
+
+    .lista .item-central button {
+        margin-left: -30px;
+        width: 108%;
+    }
+
+    .lista .item-central h3 {
+        margin-left: -30px;
+    }
+
+    .lista .item-central p {
+        margin-left: -30px;
+    }
+
+    .lista .ultima-imagem {
+        width: 100%;
+        margin-bottom: 2%;
+        margin-left: 2px;
+    }
+
+    button {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    #linha-horizontal {
+        width: 100%;
+    }
+
+    .lista .penultimo-item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    #sobre-a-loja .container-flex {
+        display: block;
+    }
+
+    #sobre-a-loja img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .lista .container-flex {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    #linha-horizontal {
+        max-width: 100%;
+    }
+
+    #linha-horizontal-2 {
+        max-width: 100%;
+    }
+
+    .lista li img {
+        max-width: 100%;
+    }
+    
+    .lista li button {
+        max-width: 100%;
+    }
+
+    .lista {
+        margin-left: 24px;
+    }
+    
+    .lista .penultimo-item button {
+        max-width: 100%;
+    }
+
+    .lista #ultimo-botao {
+        max-width: 100%;
+    }
+
+    #ultimo-item {
+        margin-left: -20px;
+    }
+}
+
+
+
+
